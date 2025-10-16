@@ -2,7 +2,7 @@ import express from "express";
 
 /**
  *
- * @param {} app - express app
+ * @param {*} app - express app
  */
 const configViewEngine = (app) => {
   app.use(express.static("./src/public"));
