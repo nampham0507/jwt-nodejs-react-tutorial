@@ -78,8 +78,10 @@ required
         <td><%=item.email %></td>
         <td><%=item.username %></td>
         <td>
-          <button type="submit" class="btn btn-warning">Edit</button>
-          <form style="display: inline;" action="/delte-user/<%=item.id %>" method="post">
+          <a class="btn btn-warning" style="display: inline;" href="/update-user/<%=item.id %>">
+          Edit
+          </a>
+          <form style="display: inline;" action="/delete-user/<%=item.id %>" method="post">
           <button type="submit" class="btn btn-danger">
             Delete
           </button></form>
