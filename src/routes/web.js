@@ -13,6 +13,7 @@ const initWebRoutes = (app) => {
   router.get("/", homeController.handleHelloWorld);
   router.get("/user", homeController.handleUserPage);
   router.post("/users/create-user", homeController.handleCreateNewUser);
+  router.post("/delte-user/:id", homeController.handleDelteUser);
 
   router.get("/about", (req, res) => {
     return res.send("Pham Dinh Nam");
